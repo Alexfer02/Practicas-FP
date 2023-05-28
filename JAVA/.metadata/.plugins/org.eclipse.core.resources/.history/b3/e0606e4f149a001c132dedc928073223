@@ -1,0 +1,18 @@
+package fp.trenes.test;
+import java.time.LocalTime;
+import fp.trenes.*;
+public class TestTrayectoTren {
+	public static void main(String[] args) {
+		TrayectoTren t = 
+				new TrayectoTrenImpl("02471","SEVILLA-MADRID", TipoTren.AV_CITY, "SEVILLA-SANTA JUSTA","MADRID-PUERTA DE ATOCHA",
+						LocalTime.parse("07:00"),
+						LocalTime.parse("10:02"));
+		//System.out.println("TRAYECTO: "+t);
+		t.anadirEstacionIntermedia(1, "PUERTOLLANO", LocalTime.parse("08:40"),LocalTime.parse("08:41"));
+		//System.out.println("TRAYECTO:"+t);
+		t.anadirEstacionIntermedia(1, "CORDOBA", LocalTime.parse("07:45"),LocalTime.parse("07:50"));
+		t.anadirEstacionIntermedia(2, "VILLANUEVA DE CÓRDOBA-LOS PEDROCHES", LocalTime.parse("08:13"), LocalTime.parse("08:14"));
+		System.out.println("Trayecto: "+t);
+		System.out.println("DURACION DEL TRAYECTO: "+t.getDuracionTrayecto());
+	}
+}

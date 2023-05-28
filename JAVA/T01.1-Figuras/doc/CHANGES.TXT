@@ -1,0 +1,19 @@
+PROJECT TITLE: "T01.1-Figuras"
+CAMBIOS DEL PROYECTO CON RESPECTO AL LIBRO: 
+
+1) Se traducen los identificadores a español.
+2) Se añade una estructura de paquetes.
+3) Se definen interfaces para todos los tipos, excepto para Canvas, ya que tiene
+un método de factoría. 
+4) Se añade la interfaz Figura, que no tiene clase de implementación.
+5) Se usan tipos envoltura, en lugar de tipos básicos.
+6) Se define la clase TrianguloImpl2 como segunda implementación de la interfaz Triangulo,
+pero con atributos tipo básico. Se debe usar para ver la diferencia en BlueJ entre tipos 
+básicos y tipos envoltura.
+7) Se añade una clase de test.
+8) Se trabaja con las interfaces List y Map en lugar de las clases de implementación a la hora
+de definir atributos.
+
+
+
+
